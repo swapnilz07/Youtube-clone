@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import "../index.css";
 
 import SidebarMenuIcon from "./SidebarMenuIcon.jsx";
 import { categories } from "../utils/constants.js";
@@ -26,7 +27,7 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`md:block w-[240px] overflow-y-auto h-full py-4 bg-black absolute md:relative z-10 translate-x-[-240px] md:translate-x-0 transition-all ${
+      className={`md:block w-[240px] overflow-y-auto h-full py-4 bg-black fixed z-10 translate-x-[-240px] md:translate-x-0 transition-all sidebar-scrollbar ${
         mobileMenu ? "translate-x-0" : ""
       }`}
     >
